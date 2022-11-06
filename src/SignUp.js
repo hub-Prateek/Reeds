@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
 import {Link} from "react-router-dom";
-import "./style.css"
+import "./style.css";
 export default function SignUp() {
   const [signupData,setSignupdata] = useState({
     username:"",
@@ -29,10 +29,10 @@ export default function SignUp() {
   }
   return (
     <>
-      <div className="SignUp-Box">
+      <div className="SignUp-Box container" >
           <h2>SignUp</h2>
           <form onSubmit={handleSubmit}>
-              <div className="username-box user-box">
+              <div className="username-box user-box row">
                 <input type="text" 
                 className='Username' 
                 onChange={handleChange}

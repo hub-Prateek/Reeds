@@ -24,7 +24,7 @@ html {
     overflow-x: hidden;
   }
   body {
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(18, 18, 18) !important;
     width: 100vw;
     min-height: 100vh;
     font-family: var(--primary-font);
@@ -38,10 +38,11 @@ html {
     font-family: var(--secondary-font);
   }
 .SignUp-Box{
+    margin: 2.5rem;
     position:absolute;
     top:50%;
     left:50%;
-    width:600px;
+    width:40rem !important;
     padding:40px;
     transform:translate(-50%, -50%);
     background:#242026;
