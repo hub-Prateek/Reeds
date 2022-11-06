@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
 import {Link} from "react-router-dom";
-import "./style.css"
-export default function SignUp() {
+import "./style.css";
+export default function SignUp() {``
   const [signupData,setSignupdata] = useState({
     username:"",
     passWord:"",
@@ -25,14 +25,14 @@ export default function SignUp() {
   function handleSubmit(event){
     event.preventDefault();
     console.log(signupData);
-
+    
   }
   return (
     <>
-      <div className="SignUp-Box">
+      <div className="SignUp-Box container" >
           <h2>SignUp</h2>
           <form onSubmit={handleSubmit}>
-              <div className="username-box user-box">
+              <div className="username-box user-box row">
                 <input type="text" 
                 className='Username' 
                 onChange={handleChange}
@@ -40,14 +40,14 @@ export default function SignUp() {
                 value={signupData.username}/>
                 <label>Username</label>
               </div>
-              <div className="email user-box">
+              <div className="email user-box row ">
                 <input type="text" 
                 onChange={handleChange}
                 name="email"
                 value={signupData.email}/>
                 <label>Email</label>
               </div>
-              <div className="password-box user-box">
+              <div className="password-box user-box row">
                 <input type="text" 
                 className='Password'
                 onChange={handleChange}
@@ -55,7 +55,7 @@ export default function SignUp() {
                 value={signupData.passWord}/>
                 <label>Password</label>
               </div>
-              <div className="confirmPassWord-box user-box">
+              <div className="confirmPassWord-box user-box row">
                 <input type="text" 
                 className=''
                 onChange={handleChange}
@@ -63,30 +63,30 @@ export default function SignUp() {
                 value={signupData.confirmPassWord}/>
                 <label>Confirm Password</label>
               </div>
-              <div className="phone-box user-box">
+              <div className="phone-box user-box row">
                 <input type="text" 
                 name='contact'
                 onChange={handleChange}
                 value={signupData.contact}/>
                 <label >Contact No:</label>
               </div>
-              <div className="AadharNom-box user-box">
+              <div className="AadharNom-box user-box row">
                 <input type="text"
                 value={signupData.aadaharNom}
                 name="aadharNom"
                 onChange={handleChange}/>
                 <label>Aadhar No:</label>
               </div>
-              <div className="pan-box user-box">
+              <div className="pan-box user-box row">
                 <input type="text"
                 name="pan"
                 value={signupData.pan} 
                 onChange={handleChange}/>
                 <label>PAN No:</label>
               </div>
-              <div className="button-form">
+              <div className="button-form row">
                 <button className='register-button'>Register</button>
-                <div className="login-redirect">
+                <div className="login-redirect row">
                   Already a member?<br></br>
                   <Link to="/Login"> LOGIN</Link>                
                 </div>
