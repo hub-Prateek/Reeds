@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito+Sans:ital,wght@0,200;0,700;1,400&display=swap');
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 50px #242026 inset !important;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
   }
   :root {
     --accent-color: #8f7cec;
-    --secondary-color: rgb(0, 0, 0);
+    --bg-color: rgb(18, 18, 18);
     --tertiary-color: #7fcbbf;
     --primary-font: 'Nunito Sans', sans-serif;
     --secondary-font: 'Comfortaa', cursive;
@@ -30,7 +37,6 @@ html {
   h6 {
     font-family: var(--secondary-font);
   }
-
 .SignUp-Box{
     position:absolute;
     top:50%;
@@ -53,7 +59,7 @@ html {
     position: relative;
     width:100%;
     padding: 10px 0;
-    font-size: 0.8rem;
+    font-size: 1rem; 
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -75,16 +81,16 @@ html {
     top: -85px;
     left: 0;
     color: var(--accent-color);
-    font-size: 10px;
+    font-size: 13px;
 }
 
-.confirmPassWord-box,.password-box{
+.username-box,.email,.confirmPassWord-box,.password-box{
     display:inline-block;
 }
-.password-box{
+.password-box,.username-box{
     width: 250px;
 }
-.confirmPassWord-box{
+.confirmPassWord-box, .email{
     width:250px;
     margin-left: 20px;
 }
@@ -95,7 +101,7 @@ font-size: 0.7rem;
 text-decoration: none;
 text-transform: uppercase;
 overflow: hidden;
-transition: .5s;
+transition: .3s;
 letter-spacing: 4px;
 border: 2px solid var(--accent-color);
 margin: auto;
@@ -106,7 +112,7 @@ background:#242026;
     color:#fff;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 5px var(--accent-color), 0 0 15px var(--accent-color), 0 0 0 var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color)
 }
 .button-form{
     display: flex;
@@ -114,6 +120,7 @@ background:#242026;
     margin-top: 20px;
 }
 .login-redirect{
+
     font-size:14px;
     text-decoration: none;
     color: #cbbddb;
@@ -121,7 +128,7 @@ background:#242026;
     width: 60%;
     text-align: center;
 }
-.login-redirect link {
+.login-redirect .link {
     margin: auto;
     color: var(--accent-color);
     text-decoration: none;
