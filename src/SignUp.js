@@ -29,10 +29,11 @@ export default function SignUp() {
   }
   return (
     <>
+    <div className="signupbody">
       <div className="SignUp-Box container" >
           <h2>SignUp</h2>
           <form onSubmit={handleSubmit}>
-              <div className="username-box user-box row">
+              <div className="username-box user-box">
                 <input type="text" 
                 className='Username' 
                 onChange={handleChange}
@@ -93,6 +94,7 @@ export default function SignUp() {
               </div>
           </form>
       </div>
+    </div>
     </>
   )
 }

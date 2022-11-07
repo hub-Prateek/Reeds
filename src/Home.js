@@ -1,17 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+// import { Link } from 'react-router-dom';
+import Navbar from  "./components/Navbar";
+import Main from './components/Main';
+import Footer from './components/Footer';
+
 export default function Home() {
   return (
     <>
-        <div>Home</div>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/SignUp">SignUp</Link>
-                    <Link to="/Login">Login</Link>
-                </li>
-            </ul>
-        </nav>
+        <Navbar />
+        <Main />
+        <Footer/>
     </>
   )
 }
