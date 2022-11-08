@@ -89,7 +89,7 @@ export default function SignUp() {
                 <button className='register-button'>Register</button>
                 <div className="login-redirect">
                   Already a member?<br></br>
-                  <Link to="/Login"> LOGIN</Link>                
+                  <Link className="link" to="/Login"> LOGIN</Link>                
                 </div>
               </div>
           </form>

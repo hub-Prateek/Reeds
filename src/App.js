@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SineUp from './SignUp';
 import Login from "./Login";
 import Home from "./Home";
+import Deals from "./Deals";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="SignUp" element={<SineUp />} />
             <Route path="Login" element={<Login />} />
-            <Route path="Login" element={<Login />} />
+            <Route path="Deals" element={<Deals />} />
         </Routes>
     </BrowserRouter>
   )
