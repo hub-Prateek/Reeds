@@ -99,7 +99,7 @@ export default function SignUp() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
                 ex ratione. Aliquid!
               </p>
-              <button className="btn transparent" id="sign-up-btn"><Link to="/SignUp">SignUp</Link></button>
+              <Link to="/SignUp"><button className="btn transparent" id="sign-up-btn">SignUp</button></Link>
             </div>
             {/* <Logo /> */}
             {/* <img src="img/log.svg" className="image" alt="" /> */}
