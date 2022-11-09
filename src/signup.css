@@ -17,6 +17,9 @@ input {
 a{
   text-decoration:none;
 }
+.pages{
+  padding-top:5rem;
+}
 .container {
   position: relative;
   width: 100%;

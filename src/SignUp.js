@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FaFacebook } from 'react-icons/fa';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import "./signup.css";
-import { useNavigate } from 'react-router-dom';
 export default function SignUp() {
   const navigate = useNavigate();
   const [signupData, setSignupdata] = useState({
@@ -33,6 +33,8 @@ export default function SignUp() {
   }
   return (
     <>
+    <Navbar/>
+    
       <div className="container">
         <div className="forms-container">
           <div className="signin-signup">
