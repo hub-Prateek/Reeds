@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaFacebook } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import "./signup.css";
 export default function SignUp() {
@@ -125,7 +126,7 @@ export default function SignUp() {
               <p className="social-text">Or Sign up with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"><FaFacebook /></i>
                 </a>
                 <a href="#" className="social-icon">
                   <i className="fab fa-twitter"></i>
@@ -149,20 +150,9 @@ export default function SignUp() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
                 ex ratione. Aliquid!
               </p>
-              <button className="btn transparent" id="sign-up-btn"><Link to="/Login">Login</Link></button>
+              <Link to="/Login"><button className="btn transparent" id="sign-up-btn">Login</button></Link>
             </div>
             {/* <img src={require("./log.svg")} className="image" alt="" /> */}
-          </div>
-          <div className="panel right-panel">
-            <div className="content">
-              <h3>One of us ?</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                laboriosam ad deleniti.
-              </p>
-              <button className="btn transparent" id="sign-in-btn">Sign in</button>
-            </div>
-            {/* <img src={require("./register.svg")} className="image" alt="" /> */}
           </div>
         </div>
       </div>
