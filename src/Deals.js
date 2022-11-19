@@ -55,13 +55,13 @@ export default function Deals() {
   //   console.log(Property);
   // })
   return (
-    <>
-      <Navbar />
+    <><div className='deals-page'>
       <div className="deals-container">
         <h1>New Deals For You !</h1>
         {cards}
       </div>
       {/* <div>Deals</div>   */}
+      </div>
     </>
   )
 }
