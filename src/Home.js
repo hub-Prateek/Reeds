@@ -10,8 +10,8 @@ export default function Home() {
     <>
     <div className="LandingPage">
         <Main />
-        <Footer />
     </div>
+        <Footer />
     </>
   )
 }

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import Navbar from './components/Navbar'
+import React, { useEffect } from 'react';
 import Card from './components/Card';
 import "./DealsStyle.css";
 
@@ -55,13 +54,12 @@ export default function Deals() {
   //   console.log(Property);
   // })
   return (
-    <><div className='deals-page'>
+    <>
       <div className="deals-container">
         <h1>New Deals For You !</h1>
         {cards}
       </div>
       {/* <div>Deals</div>   */}
-      </div>
     </>
   )
 }

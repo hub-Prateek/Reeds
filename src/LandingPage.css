@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,400&family=Poiret+One&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root{
   --prime-font: 'Nunito Sans', sans-serif;
   --second-font: 'Poiret One', cursive;
@@ -13,11 +19,17 @@ body {
     margin: 0px;
     font-family: var(--prime-font);
     font-weight: 200;
-    background-image: url('../public/bg-wallpaper.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    
   }
+
+.LandingPage{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:90vh;
+  background-image: url('../public/bg-wallpaper.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
 
   /* ===== css for nav bar ==== */
   img{
@@ -25,11 +37,13 @@ body {
       visibility: hidden;;
   }
   .nav {
-    height: 50px;
+    height: 5rem;
     width: 100%;
     background-color: var(--primary-color);
     position: fixed;
+    top:0;
     box-shadow: 0 0 5px #333;
+    z-index:11;
   }
   
   .nav > .nav-header {
@@ -40,9 +54,9 @@ body {
     font-family:var(--second-font);
     text-transform: uppercase;;
     display: inline-block;
-    font-size: 22px;
+    font-size: 2.2rem;
     color: #fff;
-    padding: 15px 10px 10px 10px;
+    padding: 1.5rem 1rem 1rem 1rem;
     position: absolute;
     color: black;
   }
@@ -56,12 +70,12 @@ body {
   .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 1.3rem 1rem;
     text-decoration: none;
     color:black;
   }
@@ -75,26 +89,26 @@ body {
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:930px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
-      right: 0px;
-      top: 0px;
+      right: 0;
+      top: 0;
     }
     .nav > .nav-btn > label {
       display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
+      width: 5rem;
+      height: 5rem;
+      padding: 1.3rem;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
     }
     .nav > .nav-btn > label > span {
       display: block;
-      width: 25px;
-      height: 10px;
+      width: 2.5rem;
+      height: 1rem;
       border-top: 2px solid black;
     }
     .nav > .nav-links {
@@ -105,7 +119,7 @@ body {
       height: 0px;
       /* transition: all 0.3s ease-in; */
       overflow-y: hidden;
-      top: 50px;
+      top: 5rem;
       left: 0px;
     }
     .nav > .nav-links > a {
@@ -121,11 +135,15 @@ body {
     }
   }
 /* ======= css for main page ===== */
-center .content{
+.LandingPage .content{
+  width: 100%;
+  height: 100vh;
+  position:absolute;
+}
+.LandingPage .content-info{
   display:block;
-  position: absolute;
-  top :22rem;
-  left: 11rem;
+  position:  absolute;
+  margin: 22rem 5rem 0 11rem;
   color: var(--primary-color);
   text-align: left;
 }
@@ -141,19 +159,55 @@ center .content{
   margin-bottom: 1.5rem;
 }
 button{
-  width: 150px;
+  width: 15rem;
   background-color: var(--primary-color);
+  color: var(--secondary-color);
   border: none;
   outline: none;
-  height: 49px;
-  border-radius: 49px;
-  color: var(--secondary-color);
+  height: 4.9rem;
+  border-radius: 4.9rem;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 1rem 0;
   cursor: pointer;
   transition: 0.5s;
   font-family: var(--prime-font);
+  font-size:1.3rem;
+}
+@media (max-width: 1100px){
+  html{
+    font-size:50%;
+  }
+}
+@media (max-width: 650px) {
+  html{
+    font-size:35%;
+}
+.LandingPage{
+  background-position: 35% 0%;
+}
+}
+@media(max-width: 470px){
+  html{
+    font-size:30%;
+  }
+  
+  .LandingPage{
+    position:relative;
+    height:100vh;
+    background-position: 68%;
+}
+  .LandingPage .content{
+    background: linear-gradient(0deg, rgba(24,31,25,1) 15%, rgba(24,31,25,0.4416044005492822) 100%);  
+  }
+  .LandingPage .content-info{
+    position:absolute;
+    text-align:center;
+    margin: 50rem 5rem 0 11rem;
+  }
+  .contributor{
+    flex-direction:column;
+  }
 }
 
 /* ===== css for footer ====== */
@@ -165,15 +219,16 @@ button{
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height:15%;
-  background-color: var(--secondary-color);
+  height:10rem;
+  /* background-color: var(--secondary-color); */
+  background-color: white;
   color:var(--primary-color)
 }
 .footer{
   display:flex;
   align-items: center;
   gap:2rem;
-  margin-bottom:2rem;
+  margin-bottom:1.2rem;
 }
 .contributor{
   display:flex;
@@ -193,10 +248,4 @@ button{
 .copyright{
   font-size:1.5rem;
   margin-bottom:5px;
-}
-
-/* deals */
-
-.deals-page{
-  
 }

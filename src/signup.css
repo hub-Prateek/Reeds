@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,400&family=Poiret+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --prime-font: 'Nunito Sans', sans-serif;
-  --second-font: 'Poiret One', cursive;
-  --primary-color: #848484;
-  --secondary-color: rgb(24, 31, 25);
-}
 
 body,
 input {
@@ -336,6 +327,7 @@ form.sign-in-form {
   }
 
   .panel .content {
+    font-size:5rem;
     text-align:center;
     padding-right: 5%;
     transition: transform 0.9s ease-in-out;
